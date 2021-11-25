@@ -89,11 +89,11 @@ if img_upload is not None:
     st.subheader('Segmented result:')
     st.image(res, caption="Segmented Image",use_column_width= auto)
     im = res.save("result.jpg")
-
-with open("result.jpg", "rb") as file:
-     btn = st.download_button(
-             label="Download",
-             data=file,
-             file_name="result.jpg",
-            mime="image/png"
-          )
+    
+    with open("result.jpg", "rb") as file:
+        btn = st.download_button(
+                label="Download",
+                data=file,
+                file_name="result.jpg",
+                mime="image/png"
+            )
