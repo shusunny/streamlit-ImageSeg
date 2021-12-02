@@ -73,11 +73,11 @@ def image_seg(img, K, max_iters):
 
 
 st.title("Image Segmentation with K-means")
-st.markdown('Please assign clusters and upload a picture to start.')
+st.markdown('Please assign clusters and upload a picture to start')
 
 # Upload and enter params
 num_clusters = st.sidebar.slider("Number of clusters(colors)", 1, 24, 8)
-num_iters = st.sidebar.slider("Number of iterations", 1, 100, 30)
+num_iters = st.sidebar.slider("Number of iterations", 1, 64, 25)
 img_upload = st.sidebar.file_uploader("Upload an image", type=["jpg", "jpeg"])
 
 if img_upload is not None:
@@ -95,5 +95,5 @@ if img_upload is not None:
                 label="Download",
                 data=file,
                 file_name="result.jpg",
-                mime="image/png"
+                mime="image/jpg"
             )

@@ -8,8 +8,14 @@ This project is a web program that takes in an upload image file and the number 
 
 The project is developed for CSUN COMP467.
 
+## Kmeans Algorithm
+K-Means finds the best centroids by alternating between (1) assigning 
+data points to clusters based on the current centroids (2) chosing centroids (points which are the center of a cluster) based on the current assignment of data points to clusters.
+
+<img src="K-means-clustering-algorithm.png" width="500">
+
 ## Live Demo
-https://share.streamlit.io/shusunny/streamlit-example
+https://share.streamlit.io/shusunny/streamlit-project/ImageSeg.py
 
 ![Sample Web_UI](sample_webUI.png)
 
@@ -28,11 +34,6 @@ The project is developed by Zhen Sun.
 
 ## Support
 Professor: Virginia Mushkatblat
-
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
 
 ## Roadmap
 High-level user stories.
