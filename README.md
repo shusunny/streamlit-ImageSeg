@@ -20,9 +20,11 @@ The project is developed for CSUN COMP467.
 
 This program build with python and streamlit. In order to run this program correctly, you will need to install the following dependencies: 
 
-[python](https://www.python.org/downloads/), [numpy](https://numpy.org/install/), [pillow](https://pillow.readthedocs.io/en/stable/installation.html)
+[python](https://www.python.org/downloads/), [numpy](https://numpy.org/install/), [pillow](https://pillow.readthedocs.io/en/stable/installation.html) or
 
-Or [Anaconda](https://www.anaconda.com/products/individual) which contains all above, and [Streamlit](https://docs.streamlit.io/library/get-started/installation)
+[Anaconda](https://www.anaconda.com/products/individual) which contains all above
+
+and [Streamlit](https://docs.streamlit.io/library/get-started/installation)
 
 ## Deployment
 Environment Check
@@ -43,14 +45,14 @@ data points to clusters based on the current centroids (2) chosing centroids (po
 <img src="Resource/K-means-clustering-algorithm.png" width="500">
 
 ## Proof of Concept
-You can find the PoC algorithm at this [notebook](Resource\ImageSeg_kmeans.ipynb)
+You can find the PoC algorithm at this [notebook](https://github.com/shusunny/streamlit-project/blob/master/Resource/ImageSeg_kmeans.ipynb)
 
 ---
 
 ## Live Demo
 https://share.streamlit.io/shusunny/streamlit-project/ImageSeg.py
 
-*You will need some time waiting the program to process the image especially if you upload a **large image and iterate many steps**.*
+*You will need some time waiting the program to process the image and **extra time** if you upload **a large image and iterate many steps**.*
 
 ## Example Output
 Original Image:
@@ -78,6 +80,7 @@ After segmentation with clusters K = 8 and 30 iterations.
 The project is developed by Zhen Sun. All code can be found at:
 
 https://gitlab.com/467_fall_2021/image-segmentation
+
 https://github.com/shusunny/streamlit-project
 
 ## Support
