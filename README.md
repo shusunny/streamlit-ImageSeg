@@ -1,20 +1,18 @@
 # Image Segmentation
 
 ## Project Description
-This project is a web program that takes in an upload image file and the number of the clutters, then output the segmentation of the image uploaded by downsampling the pixels in an image, computing the clusters, and then reassigning the values to the larger image to get the sketch.
-
-The project is developed for CSUN COMP467.
+This project uses kmeans algorithm to do the image segmentation, developed for CSUN COMP467.
 
 ## Roadmap
 
-**Epic** : Image Segmentation Web program
+**Epic** : My application will be a web program that can upload an image file and assign the clutters number, and output the sketch of the image uploaded by downsampling the pixels in an image, computing the clusters, and then reassigning the values to the larger image.
 
 **Features** (High-level user stories)
-- Algorithm Design: As a developer, I want to design a cluster algorithm with K-means method so that I can use it for further image segementation.
+- Algorithm Design: As a developer, I want to implement K-means cluster algorithm so that I can use it for further image segmentation.
 
-- Build segmentation program: As a typical user, I want to have a program that takes in an input of an image and the number of clusters so that the program will output a segmentation image with same number of clusters in color.
+- Build python program: As a typical user, I want to have a program that takes in an input of an image and the number of clusters and iterations, so that the program will output a segmentation image with input parameters.
 
-- Build web app: As a typical user, I want to have a web app that I can upload a image and select the number of clusters so that this web app will output a segmented image with same number of clusters in color.
+- Build web app: As a typical user, I want to have a web app that I can upload a image and select the number of clusters and iterations so that this web app will output a segmented image for me to download.
 
 ## Requirements
 
@@ -55,14 +53,17 @@ https://share.streamlit.io/shusunny/streamlit-project/ImageSeg.py
 *You will need some time waiting the program to process the image and **extra time** if you upload **a large image and iterate many steps**.*
 
 ## Example Output
-Original Image:
-![Original](Resource/Polarlicht.jpg)
+Original Image, size = 236 kb.
 
-After segmentation with clusters K = 8 and 30 iterations.
-![Result](Resource/Polarlicht-8-30.jpg)
+![Original](Resource/StarryNight.jpg)
 
-After segmentation with clusters K = 16 and 50 iterations.
-![Result](Resource/Polarlicht-16-50.jpg)
+After segmentation with clusters K = 4 and 16 iterations, it's doing some sketch of the image.
+
+![Result](Resource/StarryNight-4-16.jpg)
+
+After segmentation with clusters K = 12 and 30 iterations, it keeps most of the information while size is 141 kb.
+
+![Result](Resource/StarryNight-12-30.jpg)
 
 ---
 **Another Example**
@@ -71,9 +72,9 @@ Original Image:
 
 ![Original](Resource/puppy.jpg)
 
-After segmentation with clusters K = 8 and 30 iterations.
+Result with clusters K = 4 and 16 iterations, the algorithm converges pretty fast.
 
-![Result](Resource/puppy-12-50.jpg)
+![Result](Resource/puppy-4-16.jpg)
 
 
 ## Acknowledgment
